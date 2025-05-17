@@ -1,25 +1,24 @@
-//DECLARANDO O ARRAY DE IMAGES
+//Declarando o array de imagem
 
-let imagens =[
-    'src/assets/Imagem1.jpg',
-    'src/assets/Imagem2.jpg',
-    'src/assets/Imagem3.jpg',
+let imagens = [
+    'src/assets/imagem1.jpg',
+    'src/assets/imagem2.jpg',
+    'src/assets/imagem3.jpg',
 ];
 
-//DECLARANDO AS VARIAVEIS
+//Declarando as variaveis
 
-let index=0;
-let tempo=3000;
+let index = 0;
+let tempo = 3000;
 
-//CRIANDO A FUNÇÃO SLIDESHOW
+//Criando a função SlideShow
 
 function slideShow(){
-    document.getElementById("image").src=imagens[index];
+    document.getElementById("image").src = imagens[index]
     index++;
-
-    if(index == imagens.lenght){
+    if (index == imagens.length){
         index=0;
     }
-    setTimeout("slideShow()",tempo)
+    setTimeout("slideShow()", tempo)
 }
 slideShow();
